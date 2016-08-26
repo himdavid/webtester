@@ -3,8 +3,9 @@ package base;
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println("Hello World!!!");
-
+		UniqueChar unique = new UniqueChar();
+		boolean str = unique.isUnique("HEep");
+		System.out.println(str);
 	}
 
 }
