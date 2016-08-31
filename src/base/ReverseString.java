@@ -17,7 +17,7 @@ public class ReverseString {
 
 	public static void main(String[] args) {
 		ReverseString rs = new ReverseString();
-		System.out.println(rs.reverseStr("HeLLo"));
+		System.out.println(rs.reverseStr("ello mate"));
 
 	}
 

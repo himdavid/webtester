@@ -13,9 +13,21 @@ public class LinkedListTest {
 		Node newNode = head;
 		
 		while(newNode.getNext() != null) {
-			newNode = newNode.getNext();
+			newNode = newNode.next;
 		}
 		newNode = newNode.setNext(n);
+	}
+	
+	public Node reverseList(){
+		Node reversedPart = null;
+		Node current = head;
+		while (current != null) {
+		    Node next = current.next;
+		    current.next = reversedPart;
+		    reversedPart = current;
+		    current = next;
+		}
+		return reversedPart;
 	}
 	
 	public void printLinkedList(){
@@ -39,6 +51,13 @@ public class LinkedListTest {
 		list.add(n3);
 		
 		list.printLinkedList();
+		
+		//System.out.println("\n\n\n");
+		
+		list.reverseList();
+		
+		list.printLinkedList();
+		
 
 	}
 }
