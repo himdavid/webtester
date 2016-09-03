@@ -5,7 +5,7 @@ public class LinkedListTest {
 	private Node head;
 	
 	public LinkedListTest(){
-		head = new Node(null);
+		head = new Node();
 	}
 	
 	public void add(Node n){
@@ -21,12 +21,14 @@ public class LinkedListTest {
 	public Node reverseList(){
 		Node reversedPart = null;
 		Node current = head;
+		Node next = null;
 		while (current != null) {
-		    Node next = current.next;
+		    next = current.next;
 		    current.next = reversedPart;
 		    reversedPart = current;
 		    current = next;
 		}
+		head = reversedPart;
 		return reversedPart;
 	}
 	
@@ -35,29 +37,23 @@ public class LinkedListTest {
 			System.out.println("Head: "+head.getData());
 			System.out.println("next: "+head.getNext().getData());
 			
-			head = head.getNext();
+			head = head.next;
 		
 		}
 	}
 
 	public static void main(String[] args) {
 		LinkedListTest list = new LinkedListTest();
-		Node n1 = new Node("The Jungle Book");
-		Node n2 = new Node("The Lion King");
-		Node n3 = new Node("Aladin");
+		Node n1 = new Node(1);
+		Node n2 = new Node(2);
+		Node n3 = new Node(3);
 		
 		list.add(n1);
 		list.add(n2);
 		list.add(n3);
-		
-		list.printLinkedList();
-		
-		//System.out.println("\n\n\n");
-		
-		list.reverseList();
-		
-		list.printLinkedList();
-		
 
+		//list.reverseList();
+		list.printLinkedList();
+		
 	}
 }

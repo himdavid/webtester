@@ -2,11 +2,15 @@ package base;
 
 public class Node {
 	
-	private String data;
+	private int number;
 	Node next;
+	
+	public Node(){
+		
+	}
 
-	public Node(String str){
-		this.data = str;
+	public Node(int number){
+		this.number = number;
 		next = null;
 	}
 	
@@ -18,8 +22,8 @@ public class Node {
 		return next = nextValue;
 	}
 	
-	public String getData(){
-		return data;
+	public int getData(){
+		return number;
 	}
 
 	public static void main(String[] args) {
