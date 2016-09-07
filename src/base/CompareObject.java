@@ -11,7 +11,7 @@ public class CompareObject implements Comparator<Balls> {
 	public int compare(Balls b1, Balls b2) {
 		return b1.getColor().compareTo(b2.getColor());
 	}
-	
+
 	public static void main(String[] args) {
 		List<Balls> list = new ArrayList<Balls>();
 		
