@@ -26,7 +26,7 @@ public class Palindrom {
 
 	public static void main(String[] args) {
 		Palindrom pal = new Palindrom();
-		System.out.println(pal.isPalindrom("4444"));
+		System.out.println(pal.isPalindrom("4444aaaa"));
 	}
 
 }

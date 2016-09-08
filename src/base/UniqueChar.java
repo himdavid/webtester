@@ -27,4 +27,12 @@ public class UniqueChar {
 		}
 		return uniqueChar;
 	}
+	
+	public static void main(String[] args) {
+		UniqueChar unique = new UniqueChar();
+		boolean uniqueString =  unique.isUnique("HELLO1234");
+		
+		System.out.println(uniqueString);
+		
+	}
 }
