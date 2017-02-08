@@ -21,8 +21,8 @@ public class CompareObject implements Comparator<Balls> {
 		list.add(new Balls("red"));
 		list.add(new Balls("red"));
 		list.add(new Balls("blue"));
-		list.add(new Balls("Orange"));
-		list.add(new Balls("Red"));
+		list.add(new Balls("orange"));
+		list.add(new Balls("red"));
 		
 		Collections.sort(list, new CompareObject());
 		

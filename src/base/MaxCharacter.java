@@ -1,7 +1,5 @@
 package base;
 
-import java.util.Arrays;
-
 public class MaxCharacter {
 	
 	public MaxCharacter(){
@@ -26,17 +24,13 @@ public class MaxCharacter {
 				}
 				count = 1;
 			}
-			if(count > maxCount){
-				maxCount = count;
-				maxChar = list[list.length - 1];
-			}
 		}
 		System.out.println(maxCount + " " + maxChar);
 	}
 
 	public static void main(String[] args) {
 		MaxCharacter m = new MaxCharacter();
-		m.getMaxRepeatingCharacter("aabbbcdddddeeee");
+		m.getMaxRepeatingCharacter("aabbbbbbcdddddddeeee");
 
 	}
 

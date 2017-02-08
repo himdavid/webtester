@@ -16,9 +16,9 @@ public class Permutation {
 		
 		Arrays.sort(c1);
 		Arrays.sort(c2);
-		
-		String newC1 = new String(c1);
-		String newC2 = new String(c2);
+
+		String newC1 = c1.toString();
+		String newC2 = c1.toString();
 		
 		if(newC1.equals(newC2)){
 			return true;

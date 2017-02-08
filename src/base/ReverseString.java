@@ -7,7 +7,7 @@ public class ReverseString {
 	}
 	
 	public String reverseStr(String str){
-		String reverse = "";
+		String reverse = null;
 		for(int i = str.length() - 1; i>=0; i--) {
 			reverse = reverse + str.charAt(i);
 		}
@@ -17,7 +17,7 @@ public class ReverseString {
 
 	public static void main(String[] args) {
 		ReverseString rs = new ReverseString();
-		System.out.println(rs.reverseStr("ello mate"));
+		System.out.println(rs.reverseStr("etam olleh"));
 
 	}
 
