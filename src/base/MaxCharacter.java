@@ -30,7 +30,7 @@ public class MaxCharacter {
 
 	public static void main(String[] args) {
 		MaxCharacter m = new MaxCharacter();
-		m.getMaxRepeatingCharacter("aabbbbbbcdddddddeeee");
+		m.getMaxRepeatingCharacter("aabbbbbbcbbdddddddbbbeeee");
 
 	}
 

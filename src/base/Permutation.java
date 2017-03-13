@@ -1,6 +1,7 @@
 package base;
 
 import java.util.Arrays;
+import java.util.HashMap;
 
 public class Permutation {
 	
@@ -26,10 +27,49 @@ public class Permutation {
 
 		return permutation;
 	}
+
+	public boolean isPermutation2(String a, String b) {
+
+		if(a.length() != b.length()) {
+			return false;
+		}
+
+		int[] listA = new int[256];
+		int[] listB = new int[256];
+
+		for(char c: a.toCharArray()) {
+			listA[c]++;
+		}
+
+		for(char c: b.toCharArray()) {
+			listB[c]++;
+		}
+
+//		if(Arrays.equals(listA, listB)) {
+//			return true;
+//		} else {
+//			return false;
+//		}
+
+		return isEqual(listA, listB);
+
+	}
+
+	public boolean isEqual(int[] a, int[] b) {
+
+		for(int i=0; i<a.length; i++) {
+			if(a[i] != b[i]) {
+				return false;
+			}
+		}
+		return true;
+	}
+
 	
 	public static void main(String[] args) {
 		Permutation perm = new Permutation();
-		System.out.println(perm.isPermutaton("dog","OGD "));
+		System.out.println(perm.isPermutaton("dog is a book","ogd ai s koob"));
+		System.out.println(perm.isPermutation2("dog is a book","ogd ai s koob"));
 	}
 
 }

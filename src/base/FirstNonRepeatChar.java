@@ -28,7 +28,7 @@ public class FirstNonRepeatChar {
 
         for(Map.Entry<Character, Integer> entry : map.entrySet()) {
             if(entry.getValue() != -1) {
-                return entry.getKey().toString();
+                return entry.getKey().toString() + " index:" + entry.getValue();
             } else {
                 firstNonRepeatChar = "Everything was a dupe";
             }
@@ -41,6 +41,6 @@ public class FirstNonRepeatChar {
 
         FirstNonRepeatChar fnrc = new FirstNonRepeatChar();
 
-        System.out.println(fnrc.findFirstNonRepeatingChar("wcwwppa"));
+        System.out.println(fnrc.findFirstNonRepeatingChar("wwpppaca"));
     }
 }

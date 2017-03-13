@@ -26,9 +26,20 @@ public class findCharOccurrence {
         return count;
     }
 
+    public int occurance2(String str, String character) {
+        int[] intList = new int[256];
+
+        for(char c : str.toCharArray()) {
+            intList[c] ++;
+        }
+
+        return intList[character.charAt(0)];
+    }
+
     public static void main(String[] args) {
         findCharOccurrence find = new findCharOccurrence();
 
         System.out.println(find.occurance("abfde ffgh if f", "f"));
+        System.out.println(find.occurance2("abfde ffgh if f", "f"));
     }
 }

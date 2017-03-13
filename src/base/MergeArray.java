@@ -29,21 +29,14 @@ public class MergeArray {
             mergeIndex--;
         }
 
-//        while(bIndex >=0) {
-//            a[mergeIndex] = b[bIndex];
-//            bIndex--;
-//            mergeIndex--;
-//
-//        }
-
 
         System.out.println(Arrays.toString(a));
 
     }
     public static void main(String[] args) {
 
-        int[] array1 = {1,3,4,8,0,0,0};
-        int[] array2 = {2,6,7};
+        int[] array1 = {-3,-1,4,8,0,0,0};
+        int[] array2 = {-2,6,7};
 
         MergeArray merge = new MergeArray();
 
