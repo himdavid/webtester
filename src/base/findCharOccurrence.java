@@ -22,7 +22,6 @@ public class findCharOccurrence {
                 count++;
             }
         }
-
         return count;
     }
 
@@ -39,7 +38,7 @@ public class findCharOccurrence {
     public static void main(String[] args) {
         findCharOccurrence find = new findCharOccurrence();
 
-        System.out.println(find.occurance("abfde ffgh if f", "f"));
-        System.out.println(find.occurance2("abfde ffgh if f", "f"));
+        System.out.println(find.occurance("abfde!@#$%^&*() ffgh if f", "!"));
+        System.out.println(find.occurance2("abfde!@#$%^&*() ffgh if f", "!"));
     }
 }

@@ -67,9 +67,9 @@ public class SubStringSearch {
         return index;
     }
 
-    public static void main(String[] arg) {
+     public static void main(String[] arg) {
 
-        String mainString = "Having a baby is fun until you have to go to sleep";
+        String mainString = "Having a bab is fun ba until you babyhave to go to sleep";
         String subString = "baby";
 
         SubStringSearch sss = new SubStringSearch();

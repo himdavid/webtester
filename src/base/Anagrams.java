@@ -82,7 +82,7 @@ public class Anagrams {
     public static void main(String[] args) {
 
         Anagrams ana = new Anagrams();
-        //boolean anagram = ana.isAnagram2("1354", "1 435");
+        System.out.println(ana.isAnagram2("1354", "1435"));
         String[] stringList = {"geeksquiz", "geeksforgeeks", "abcd",
                 "forgeeksgeeks", "zuiqkeegs"};
         ana.anagramList(stringList);

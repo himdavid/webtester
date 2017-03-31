@@ -11,7 +11,7 @@ public class MergeArray {
 
     }
 
-    public void merge2Arrays(int[] a, int[] b, int aLength, int bLength){
+    public static void merge2Arrays(int[] a, int[] b, int aLength, int bLength){
 
         int aIndex = aLength -1;
         int bIndex = bLength - 1;
@@ -29,10 +29,9 @@ public class MergeArray {
             mergeIndex--;
         }
 
-
         System.out.println(Arrays.toString(a));
-
     }
+
     public static void main(String[] args) {
 
         int[] array1 = {-3,-1,4,8,0,0,0};
